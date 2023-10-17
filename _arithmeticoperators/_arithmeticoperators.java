@@ -6,6 +6,6 @@ public class _arithmeticoperators {
             sum = sum + (num + num2);
         System.out.println("Sum : "+sum);
         //
-        //
+        // git try
     }
 }
