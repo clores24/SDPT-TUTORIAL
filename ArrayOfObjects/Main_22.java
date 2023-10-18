@@ -42,7 +42,7 @@ public class Main_22 {
         for (int i = 0; i < stud.length; i++){
             System.out.println("Student " + (i + 1));
 
-grwer            System.out.print("FIRSTNAME: ");
+            System.out.print("FIRSTNAME: ");
                 String firstname = s.nextLine();
 
             System.out.print("MIDDLENAME: ");
