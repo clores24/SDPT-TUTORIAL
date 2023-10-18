@@ -42,7 +42,7 @@ public class Main_22 {
         for (int i = 0; i < stud.length; i++){
             System.out.println("Student " + (i + 1));
 
-            System.out.print("FIRSTNAME: ");
+grwer            System.out.print("FIRSTNAME: ");
                 String firstname = s.nextLine();
 
             System.out.print("MIDDLENAME: ");
@@ -81,6 +81,7 @@ public class Main_22 {
             System.out.println();
         }
 
+    // i made it without the help of chat gpt
 
     }
 }
