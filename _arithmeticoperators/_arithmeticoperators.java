@@ -5,7 +5,5 @@ public class _arithmeticoperators {
         int sum = 0;
             sum = sum + (num + num2);
         System.out.println("Sum : "+sum);
-        //
-        // git try
     }
 }

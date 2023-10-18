@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main_22",
+            "request": "launch",
+            "mainClass": "ArrayOfObjects.Main_22",
+            "projectName": "OPP1_14b12d7e"
+        }
+    ]
+}
