@@ -12,7 +12,6 @@ public class Main_22 {
             int studToReg = 0;
         if (yesOrno.equals("no")) {
             System.out.println("Unable to continue");
-            isTrue = true;
         } else {
             while (!isTrue){
                 if (yesOrno.equals("yes")){
