@@ -32,54 +32,56 @@ public class Main_22 {
                         }
                     }
 
-            System.out.println("How many students you want ot register: ");
-                studToReg = s.nextInt();
+        System.out.println("How many students you want ot register: ");
+            studToReg = s.nextInt();
+            s.nextLine();
+            StudentRegistrationForm stud[] = new StudentRegistrationForm[studToReg];
+
+        for (int i = 0; i < stud.length; i++){
+            System.out.println("Student " + (i + 1));
+
+            System.out.print("FIRSTNAME: ");
+                String firstname = s.nextLine();
+
+            System.out.print("MIDDLENAME: ");
+                char middlename = s.nextLine().charAt(0);
+                
+            System.out.print("LASTNAME: ");
+                String lastname = s.nextLine();
+
+            System.out.print("AGE: ");
+                int age = s.nextInt();
                 s.nextLine();
-                StudentRegistrationForm stud[] = new StudentRegistrationForm[studToReg];
 
-            for (int i = 0; i < stud.length; i++){
-                System.out.println("Student " + (i + 1));
+            System.out.print("GENDER: ");
+                String gender = s.nextLine();
 
-                System.out.print("FIRSTNAME: ");
-                    String firstname = s.nextLine();
+            System.out.print("NATIONALITY: ");
+                String nationality = s.nextLine();
 
-                System.out.print("MIDDLENAME: ");
-                    char middlename = s.nextLine().charAt(0);
-                    
-                System.out.print("LASTNAME: ");
-                    String lastname = s.nextLine();
+            System.out.print("YEAR: ");
+                String year = s.nextLine();
 
-                System.out.print("AGE: ");
-                    int age = s.nextInt();
-                    s.nextLine();
+            System.out.print("COURSE: ");
+                String course = s.nextLine();
 
-                System.out.print("GENDER: ");
-                    String gender = s.nextLine();
+            System.out.print("SECTION: ");
+                String section = s.nextLine();
 
-                System.out.print("NATIONALITY: ");
-                    String nationality = s.nextLine();
-
-                System.out.print("YEAR: ");
-                    String year = s.nextLine();
-
-                System.out.print("COURSE: ");
-                    String course = s.nextLine();
-
-                System.out.print("SECTION: ");
-                    String section = s.nextLine();
-
-                stud[i] = new StudentRegistrationForm(firstname, gender, lastname, age, middlename, nationality, year, course, section);
-            }
+            stud[i] = new StudentRegistrationForm(firstname, gender, lastname, age, middlename, nationality, year, course, section);
             System.out.println();
-
-            String university = "AMA Universiry";
-            for (int i = 0; i < stud.length; i++){
-                stud[i].welcome(university);
-                stud[i].registeredStudents();
-                System.out.println();
-            }
-            
         }
+        System.out.println();
+
+        String university = "AMA Universiry";
+        for (int i = 0; i < stud.length; i++){
+            System.out.println("Student " + (i + 1));
+            stud[i].welcome(university);
+            stud[i].registeredStudents();
+            System.out.println();
+        }
+        
+    }
 
 
     }
