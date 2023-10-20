@@ -13,24 +13,24 @@ public class Main_22 {
         if (yesOrno.equals("no")) {
             System.out.println("Unable to continue");
         } else {
-            while (!isTrue){
-                if (yesOrno.equals("yes")){
-                    System.out.print("Enter your ID number: ");
-                        String idNumber = s.nextLine();
-                            if (idNumber.equals("22-18068")){
-                                System.out.println("<----------You can now proceed---------->");
-                                System.out.println();
+                while (!isTrue){
+                    if (yesOrno.equals("yes")){
+                        System.out.print("Enter your ID number: ");
+                            String idNumber = s.nextLine();
+                                if (idNumber.equals("22-18068")){
+                                    System.out.println("<----------You can now proceed---------->");
+                                    System.out.println();
+                                    isTrue = true;
+                                } else {
+                                    System.out.println(idNumber + " ID number not found");
+                                    System.out.println();
+                                    continue;
+                                }
+                            } else { // i think this will be useless unless i change the while loop to for loop with the size of 3 attenmpts
+                                System.out.println("unable to proceed");
                                 isTrue = true;
-                            } else {
-                                System.out.println(idNumber + " ID number not found");
-                                System.out.println();
-                                continue;
                             }
-                        } else { // i think this will be useless unless i change the while loop to for loop with the size of 3 attenmpts
-                            System.out.println("unable to proceed");
-                            isTrue = true;
                         }
-                    }
 
         System.out.println("How many students you want ot register: ");
             studToReg = s.nextInt();

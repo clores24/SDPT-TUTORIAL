@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "challenges",
+            "request": "launch",
+            "mainClass": "QUICKPRACTICE.challenges",
+            "projectName": "OPP1_14b12d7e"
+        },
+        {
+            "type": "java",
             "name": "Main_22",
             "request": "launch",
             "mainClass": "ArrayOfObjects.Main_22",
